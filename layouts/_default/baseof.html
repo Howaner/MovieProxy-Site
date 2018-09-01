@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lange="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "meta.html" . }}
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ partial "css.html" . }}
+    <link rel="stylesheet" type="text/css" href="{{ "/css/custom.css" | absURL }}">
+  </head>
+  <body>
+    <!-- Preloader (Disabled by howaner) -->
+    <!--<div id="preloader">
+      <div id="status"></div>
+    </div>-->
+
+    {{ block "main" . }}
+
+    {{ end }}
+
+    {{ partial "javascript.html" . }}
+  </body>
+</html>

@@ -1,0 +1,48 @@
+{{- $navbar := .Site.Params.navbar }}
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="{{ "/images/logo-full.png" | absURL }}" alt="" width="64" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end">
+          {{- range $navbar }}
+          {{- if .sublinks }}
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              {{ .title }}
+            </a>
+
+            <div class="navbar-dropdown">
+              {{- range .sublinks }}
+              <a href="{{ .url }}" class="navbar-item">
+                {{ .title }}
+              </a>
+              {{- end }}
+            </div>
+          </div>
+          {{- else if .button }}
+          <a href="{{ .url }}" class="navbar-item">
+            <span class="button signup-button rounded secondary-btn raised">
+              {{ .title }}
+            </span>
+          </a>
+          {{- else }}
+          <a href="{{ .url }}" class="navbar-item is-secondary" {{- if .target }}target="{{ .target }}"{{- end }}>
+            {{ .title }}
+          </a>
+          {{- end }}
+          {{- end }}
+        </div>
+      </div>
+  </div>
+</nav>

@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <section class="hero is-default is-bold">
+        {{ partial "navbar.html" . }}
+        {{ partial "navbar-clone.html" . }}
+        {{ partial "hero-body.html" . }}
+    </section>
+
+    {{ partial "section2.html" . }}
+    {{ partial "section1.html" . }}
+    {{ partial "footer.html" . }}
+
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+{{ end }}

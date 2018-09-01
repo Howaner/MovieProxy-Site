@@ -1,0 +1,104 @@
+baseURL: /
+languageCode: de-de
+languageLang: de
+title: MovieProxy
+theme: hugo-fresh
+disableKinds: ["taxonomyTerm"]
+
+params:
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    title: MovieProxy
+    subtitle: MovieProxy ist eine Webapplikation zum Selbst-Hosting mit der Möglichkeit, Videos gleichzeitig herunterzuladen und anzuschauen.
+    buttontext: Jetzt installieren
+    buttonlink: "/installation"
+    image: preview.png
+  navbar:
+  - title: Bilder
+    url: /pictures
+  - title: Github
+    url: https://www.github.com/Howaner/MovieProxy
+    target: _blank
+  - title: Installation
+    url: /installation
+    button: true
+  section1:
+    title: Technologie
+    subtitle:
+    tiles:
+    - title: Open Source
+      icon: mouse-globe
+      text: Passe die Software nach deinen Wünschen an!
+      buttonText: Free trial
+    - title: Basiert auf Java
+      icon: laptop-cloud
+      text: Die Software ist in Java geschrieben, wodurch sie so gut wie auf allen System läuft.
+      buttonText: Get started
+    - title: Raspberry-Pi Kompatibel
+      icon: plug-cloud
+      text: Du brauchst keinen eigenen Server. Installier die Software einfach auf einem Pi!
+      buttonText: Get started
+  section2:
+    title: Nerft dich das lange Puffern von Videos?
+    subtitle: MovieProxy schafft Abhilfe!
+    features:
+    - title: Schnelleres Puffern
+      text: Da MovieProxy bereits im Hintergrund das Video herunterlädt, geht das Vorspulen um einiges schneller, da diese Inhalte oft schon heruntergeladen sind.
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: laptop-globe
+    - title: Anlegen einer lokalen Videosammlung
+      text: Der MovieProxy legt das Video nach dem Anschauen in einem Ordner ab. Dadurch hat man die Möglichkeit, später das Video nochmals lokalen anzuschauen oder in einem Mediencenter wie Kodi einzubinden.
+      icon: doc-sync
+    - title: Anschauen während dem Download
+      text: Der MovieProxy macht beides gleichzeitig. Sobald ein Dateiname und der Video-Link eingegeben wurde, wird der Download gestartet und das Video kann während des Downloads sofort angeschaut werden. Auch Vorspulen wird unterstützt.
+      icon: mobile-feed
+  section3:
+    title: One platform
+    subtitle: To rule them all
+    image: preview.png
+    buttonText: Get started
+    buttonLink: "#"
+  section4:
+    title: Our Clients love us!
+    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+    clients:
+    - name: Irma Walters
+      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      job: Accountant
+      img: 1
+    - name: John Bradley
+      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      job: Financial Analyst
+      img: 2
+    - name: Gary Blackman
+      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      job: HR Manager
+      img: 3
+  footer:
+    # Logo (from /images/logos/___)
+    logo: logo-full.png
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/Howaner/MovieProxy
+      icon: github
+    - link: https://twitter.com/Howaner
+      icon: twitter
+    product:
+    - text: Bilder
+      link: /pictures
+    - text: Feature Wünsche
+      link: https://github.com/Howaner/MovieProxy/issues
+    docs:
+    - text: Installation
+      link: /installation
+    - text: Konfiguration
+      link: /configuration
+    blogroll:
+    - text: Zum Projekt beitragen
+      link: /contribute
+    - text: Datenschutz
+      link: /privacy
+    - text: Impressum
+      link: /impressum
